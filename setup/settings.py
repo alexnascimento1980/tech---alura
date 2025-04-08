@@ -30,7 +30,6 @@ ALLOWED_HOSTS = []
 
 SITE_ID = 1
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -143,9 +142,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SOCIALACCOUNT_PROVIDERS = {
     'github': {
         'APP': {
-            'client_id': 'Ov23cttav8Pk7yYecMgE',
-            'secret': 'dedea52265de523c63c228633fb27c9c3a18bd4d',
+            'client_id': 'Ov23lis5FdEeg6uJD7TA',
+            'secret': '6c4bc9e45f48443b021f3fa2c91ca6e5018bfd83',
             'key': ''
         }
     }
 }
+
+LOGIN_REDIRECT_URL = '/members'
+
+SOCIALACCOUNT_LOGIN_ON_GET = True
+
+ACCOUNT_LOGOUT_ON_GET = True
+
+LOGOUT_REDIRECT_URL = '/'
